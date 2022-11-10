@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Form</title>
+	<style>
+		label {
+			display: block;
+			
+          
+
+
+		}
+	</style>
+</head>
+
+<body>
+	<h1>REGISTRATI QUI</h1>
+	<form>
+		
+		<label for="email" >E-mail</label>
+		<input type="text" id="email"  placeholder="e-mail"required  autocomplete="on">
+		<label for="keyword">Password</label>
+		<input type="password" id="keyword" maxlength="10" size="20" required placeholder="password">
+        <label for="nome">Nome e Cognome</label>
+		<input type="text" id="nome" placeholder="scrivi nome e cognome " required autocomplete="on" >
+		<label for="date">Data di nascita</label>
+		<input type="date" id="date" name="date" min="1700-01-01" max="2012-02-10" required>
+		<label for="numero">Numero di telefono</label>
+		<input type="tel" id="numero" maxlength="10" size="20" required placeholder="numero senza prefisso">
+          
+		   
+		    <label for="piano">Abbonamenti</label>
+		<select name="abbonamenti">
+		<option value="piano0">Piano free</option>
+		 <optgroup label="Piani a pagamento">
+		    <option value="piano1">Piano standard (199$)</option>
+			<option value="piano2">Piano extra (500$)</option>
+			<option value="piano3">Piano premium (1000$)</option>
+		</optgroup>
+		</select>
+<label for="vantaggi"> Vantaggi pro</label>
+<input type="checkbox" id="vantaggi" >
+<label for="carta">Inserisci carta</label>
+<input type="text" id="carta" placeholder="numero carta" maxlength="16" required autocomplete>
+<label for="cvc"></label>
+<input type="text" id="cvc" placeholder="cvc" maxlength="3" pattern="[0-9] {3}" title="Massimo 3 cifre">
+<!--Maxlength cosi piu' di 3 non può scrivere o è meglio il pattern con il titolo che avvisa il cliente?-->
+<label for="date">Data di scadenza</label>
+<input type="date" id="date" name="date"/>
+<!--Non possiamo fare anche cosi?
+<label for="scadenza">Data di scadenza</label>
+<select name="scadenza" id="scadenza">
+<option value="mesi">Mesem</option>
+<option value="gennaio">01</option>
+<option value="febbraio">02</option>
+<option value="marzo">03</option>
+<option value="aprile">04</option>
+<option value="maggio">05</option>
+<option value="giugno">06</option>
+<option value="luglio">07</option>
+ <option value="agosto">08</option>
+<option value="settembre">09</option>
+<option value="ottobre">10</option>
+<option value="novembre">11</option>
+<option value="dicembre">12</option>
+ </select>
+<select name="scadenza" id="scadenza">
+<option value="scadenza">Anno</option>
+<option value="22" selected>2022/option>
+<option value="23">2023</option>
+<option value="24">2024</option>
+<option value="25">2025</option>
+<option value="26">2026</option>
+ <option value="27">2027</option>
+</select>-->
+                       
+<label for="indirizzo">Indirizzo di fatturazione</label>
+<input type="text" id="indirizzo" placeholder="indirizzo e numero civico" required autocomplete="on">
+
+<button type="submit">Registrati</button>
+
+</form>
+</body>
+</html>
